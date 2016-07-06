@@ -3,6 +3,8 @@
 var gulp=require('gulp');
 var sass=require('gulp-sass');
 var cleanCSS=require('gulp-clean-css');
+var browserSync=require('browser-sync').create();
+var reload=browserSync.reload;
 
 gulp.task('minify-css', function() {
     return gulp.src('css/source/*.css')
@@ -10,20 +12,29 @@ gulp.task('minify-css', function() {
             console.log(details.name + ': ' + details.stats.originalSize);
             console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
-        .pipe(gulp.dest('css/'));
+        .pipe(gulp.dest('css/'))
+        .pipe(browserSync.stream());
 });
-
 
 gulp.task('sass', function() {
 	gulp.src('./sass/**/*.sass')
 	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('./css/source'));
+	.pipe(gulp.dest('./css/source'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('sass:watch', function() {
-	gulp.watch('./sass/**/*.sass', ['sass', 'minify-css']);
+	gulp.watch('./sass/**/*.sass', ['sass', ,'browser-sync']);
 
 });
-gulp.task('default',['sass:watch'], function() {
-    // content
+gulp.task('serve', ['sass','minify-css'], function() {
+
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch("sass/*.sass", ['sass', 'minify-css']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
+
+gulp.task('default',['serve']);

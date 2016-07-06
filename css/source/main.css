@@ -1,20 +1,86 @@
+@font-face {
+  font-family: 'helveticaneuecyrlight';
+  src: url("../font/helveticaneuecyr-light-webfont.woff2") format("woff2"), url("../font/helveticaneuecyr-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   margin: 0;
   padding: 0; }
 
-#bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%; }
+html {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'helveticaneuecyrlight'; }
 
-#bg img {
+nav {
+  height: 36px;
+  background: url(../img/nav-bg.png) #074c89;
+  font-size: 12pt;
+  line-height: 36px;
+  font-weight: 600; }
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  clear: both; }
+
+nav ul li {
+  display: block;
+  float: left; }
+
+nav ul li a {
+  padding: 0 10px 0 10px;
+  display: block;
+  text-decoration: none;
+  color: #60B5ED; }
+
+nav ul li a:hover {
+  background: #4eabda;
+  color: #fff; }
+
+nav ul li img {
+  vertical-align: middle;
+  margin: 0 auto; }
+
+.vlined {
+  background: #56a2dc;
+  width: 1px;
+  height: 30px;
+  text-align: center;
+  margin: 3px 6px 3px 6px; }
+
+.underscore {
+  text-decoration: underline; }
+
+.rlist {
+  color: #FFF; }
+
+.rlist:hover {
+  background: green; }
+
+.wrapper {
+  display: block;
+  width: 100%;
+  position: relative; }
+
+.main {
+  width: 560px;
+  height: 613px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%; }
+  left: 50%;
+  top: 50%;
+  margin: 307px 0 0 280px; }
+
+.main__title {
+  display: block;
+  height: 62px;
+  background: rgba(0, 0, 0, 0.63);
+  margin-bottom: 2px; }
+
+.main__form {
+  display: block;
+  height: 550px;
+  background: rgba(0, 0, 0, 0.63); }
