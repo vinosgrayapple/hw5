@@ -20,7 +20,8 @@ nav {
   background: url(../img/nav-bg.png) #074c89;
   font-size: 12pt;
   line-height: 36px;
-  font-weight: 600; }
+  font-weight: 600;
+  z-index: 2; }
 
 nav ul {
   float: right;
@@ -64,23 +65,61 @@ nav ul li img {
 .wrapper {
   display: block;
   width: 100%;
-  position: relative; }
+  height: 100%; }
 
 .main {
+  display: block;
   width: 560px;
   height: 613px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: 307px 0 0 280px; }
+  margin: -280px 0 0 -307px;
+  z-index: 1; }
 
 .main__title {
   display: block;
   height: 62px;
   background: rgba(0, 0, 0, 0.63);
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 62px;
+  font-weight: 600; }
 
 .main__form {
   display: block;
   height: 550px;
   background: rgba(0, 0, 0, 0.63); }
+
+.facebook {
+  display: block;
+  height: 100px;
+  text-align: center; }
+
+.facebook img {
+  margin: 0 auto;
+  padding: 36px; }
+
+.facebook a {
+  display: block; }
+
+.ou_2_line {
+  font-size: 14px;
+  color: #999;
+  vertical-align: middle; }
+
+.ou_2_line p {
+  display: inline-block; }
+
+.line1 {
+  display: inline-block;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #000;
+  width: 124px; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
