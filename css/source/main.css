@@ -56,12 +56,6 @@ nav ul li img {
 .underscore {
   text-decoration: underline; }
 
-.rlist {
-  color: #FFF; }
-
-.rlist:hover {
-  background: green; }
-
 .wrapper {
   display: block;
   width: 100%;
@@ -78,7 +72,6 @@ nav ul li img {
   z-index: 1; }
 
 .main__title {
-  display: block;
   height: 62px;
   background: rgba(0, 0, 0, 0.63);
   margin-bottom: 2px;
@@ -89,35 +82,118 @@ nav ul li img {
   font-weight: 600; }
 
 .main__form {
-  display: block;
-  height: 550px;
+  height: 570px;
+  width: 560px;
   background: rgba(0, 0, 0, 0.63); }
 
-.facebook {
-  display: block;
-  height: 100px;
-  text-align: center; }
+.inner_main {
+  margin-left: 142px;
+  display: inline-block;
+  width: 276px;
+  height: 500px;
+  text-align: center;
+  vertical-align: middle; }
 
-.facebook img {
-  margin: 0 auto;
-  padding: 36px; }
+.facebook {
+  display: inline-block;
+  margin-top: 32px; }
 
 .facebook a {
   display: block; }
 
 .ou_2_line {
+  height: 14px;
   font-size: 14px;
   color: #999;
-  vertical-align: middle; }
+  margin-top: 31px;
+  margin-bottom: 30px; }
 
 .ou_2_line p {
   display: inline-block; }
 
 .line1 {
   display: inline-block;
+  vertical-align: middle;
   border-top: 1px solid #666;
   border-bottom: 1px solid #000;
   width: 124px; }
+
+.input_text {
+  height: 35px;
+  width: 256px;
+  background: #111;
+  border: transparent;
+  border-bottom: 1px solid #484948;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-weight: 600; }
+
+.input_text[placeholder] {
+  padding-left: 20px; }
+
+.input_text:focus {
+  color: #FFFBFB;
+  background: #1b5288;
+  border-bottom: 1px solid #689bcc;
+  -webkit-box-shadow: 0px 0px 8px 3px #2f7bc5;
+  -moz-box-shadow: 0px 0px 8px 3px #2f7bc5;
+  box-shadow: 0px 0px 8px 3px #2f7bc5; }
+
+label {
+  color: #ccc;
+  margin-left: 10px;
+  font-size: 1em; }
+
+.check_left {
+  margin-top: 2px;
+  text-align: left; }
+
+.footer_text {
+  color: #CCC;
+  font-size: 11px;
+  margin-top: 20px; }
+
+button {
+  background: url("../img/button.png") center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 155px;
+  height: 40px;
+  margin-left: 60px;
+  margin-top: 22px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+  user-select: none;
+  border: 1px solid transparent;
+  outline: none; }
+
+button:active {
+  color: #FFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 13px 10px 16px -12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 13px 10px 16px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 13px 10px 16px -12px rgba(0, 0, 0, 0.5); }
+
+button:hover {
+  color: #eee; }
+
+li#rlist1 a, li#rlist2 a {
+  display: block;
+  color: #FFF; }
+
+li#rlist1 a:hover, li#rlist2 a:hover {
+  background: url("../img/navBG.png") center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .clearfix:after {
   content: '';
