@@ -141,7 +141,7 @@ li#rlist2 a {
     color: #ccc;
     font-size: 14px;
     margin-bottom: 20px;
-    text-weight: 600
+    font-weight: 600
 }
 .input_text[placeholder] {
     padding-left: 20px
