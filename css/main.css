@@ -26,10 +26,8 @@ nav ul li img {
 }
 html {
     background: url(../img/background.jpg) center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    font-family: helveticaneuecyrlight
+    font-family: helveticaneuecyrlight;
 }
 nav {
     height: 36px;
@@ -150,8 +148,6 @@ li#rlist2 a {
     color: #FFFBFB;
     background: #1b5288;
     border-bottom: 1px solid #689bcc;
-    -webkit-box-shadow: 0 0 8px 3px #2f7bc5;
-    -moz-box-shadow: 0 0 8px 3px #2f7bc5;
     box-shadow: 0 0 8px 3px #2f7bc5
 }
 label {
@@ -170,8 +166,6 @@ label {
 }
 button {
     background: url(../img/button.png) center center no-repeat;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     width: 155px;
     height: 40px;
@@ -186,11 +180,7 @@ button {
 }
 button:active {
     color: #FFF;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-box-shadow: inset 13px 10px 16px -12px rgba(0, 0, 0, .5);
-    -moz-box-shadow: inset 13px 10px 16px -12px rgba(0, 0, 0, .5);
     box-shadow: inset 13px 10px 16px -12px rgba(0, 0, 0, .5)
 }
 button:hover {
@@ -199,8 +189,6 @@ button:hover {
 li#rlist1 a:hover,
 li#rlist2 a:hover {
     background: url(../img/navBG.png) center center no-repeat;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
     background-size: cover
 }
 .clearfix:after {
